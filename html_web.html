@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ 		<head>
+		<title>Lists</title>
+		<!-- BLINKING BACKGROUND-->
+        <script type="text/javascript">
+
+            function change_color(flag){
+                var color = null;
+                if (flag === true){
+                    var color = "black";
+                }else{
+                    var color = "#990099";
+                }
+                document.body.style.background = color;
+                flag = !flag
+                var t=setTimeout(function(){change_color(flag)},1000);
+            }
+        </script>
+
+  </head>
+  <body onload="change_color(true)">
+  <div id="menu">
+    <ul>
+      <li><a href="WELCOME.html">HI!!!</a></li>
+      <li><a href="Index.html">About Me</a></li>
+      <li><a href="html_web.html">HTML</a></li>
+      <li><a href="hardware.html">Hardware</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="riddles.html">Riddles</a></li>
+      <li><a href="Maze.html">Maze</a></li>
+      <li><a href="vindinium.html">Vindium</a></li>
+      </ul>
+  </div>
+  <style>
+      h1{
+        color:MintCream;
+        text-align:center;
+        font-size:250%;
+      }
+      #menu li{
+	   Display:inline;
+	   text-decoration:none;
+	   color:MintWhite;
+	   padding:20px;
+	   width:550px;
+	   border-style:solid;
+	   background-color:GhostWhite;
+	  }
+	  div{
+	      text-align: center;
+	  }
+	  p{
+	      color:GhostWhite;
+	      font-size:200%;
+	      text-align:center;
+	  }
+	  h2, h3, h4{
+	    text-align:center;
+	    color:GhostWhite;
+	    font-size:250%;
+	  }
+	  img{
+	    height:150px;
+	  }
+  </style>
+  <h1>HTML</h1>
+  <div><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png"></div>
+    <p>Most of you reading this are probably wondering "What is HTML".</p>
+    <p>lucky for you I am going to explain to you what HTML is.</p>
+  <h2>what does it stand for?</h2>
+    <p>Obviously HTML has to stand for something, right.  Basically </p>
+      <p>it stands for Hyper Text Markup Language. Let Me explain what</p>
+    <p>it does and how important it is.</p>
+  <h3>how is it used</h3>
+    <p>It is used to make things like a website,like a game, etc.</p>
+      <p>The possibilities are almost endless because everything </p>
+        <p>must have a limit. Most of the time you will need CSS to</p>
+      <p>make your program a whole lot better. I will explain CSS</p>
+    <p>bellow this section.</p>
+  <h4>CSS</h4>
+    <div><img src="http://php.quicoto.com/wp-content/uploads/2013/06/css3.jpg"style= height:150px;text-align:center></div>
+    <p></p>

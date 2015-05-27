@@ -1,0 +1,60 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ 
+    <title>Maze Runner</title> 
+    <link rel="stylesheet" type="text/css" href="maze.css">
+</head>
+    
+   <style>
+    #menu li{
+	   Display:inline;
+	   text-decoration:none;
+	   color:MintWhite;
+	   padding:20px;
+	   width:550px;
+	   border-style:solid;
+	   background-color:GhostWhite;
+	  }
+    </style>
+  <body onload="change_color(true)">
+   <h1 align="center">Maze Runner</h1>
+      <div class="directions" align="center">
+         <!-- explains directions and <br> means line breaks so it skips down to the next line-->
+        <p> Directions: Press one of the arrow keys
+            <br>to start the game and to move your player
+            <br>to the finish area as fast as possible
+            <br>To play again reload the page</p>
+    </div>
+      <div align="center">
+          <!--displays the timer at center of the page under the directions-->
+          <span id="timer_out">
+              0.00
+          </span>
+          <br/>
+          <br/>
+             <!-- stop button to freeze the clock -->
+              <button id="stop" onclick="stop()">
+                  Stop
+              </button>
+          
+      </div> 
+      <!--picture of the maze that is being used with its size-->
+<div align= "center">
+    <img src="http://scnfamily.org/youth/maze/files/maze2_img.jpg" style="width:350px; height:300" >
+</div>  
+
+<div>   
+<canvas id= width="482" height="482">
+</canvas>
+</div>
+      <!--size and location of the entity or box-->
+      <div id="character" style="height: 25px; width: 25px; position: absolute; top: 400px; left:100px; border: 2px solid black;"></div>
+    
+    
+<script src="maze.js"></script>    
+</body>
+</html>

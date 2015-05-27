@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ 		<head>
+		<title>Lists</title>
+		<!-- BLINKING BACKGROUND-->
+        <script type="text/javascript">
+
+            function change_color(flag){
+                var color = null;
+                if (flag === true){
+                    var color = "black";
+                }else{
+                    var color = "#990099";
+                }
+                document.body.style.background = color;
+                flag = !flag
+                var t=setTimeout(function(){change_color(flag)},1000);
+            }
+        </script>
+  
+  <div id="menu">
+    <ul>
+      <li><a href="WELCOME.html">HI!!!</a></li>
+      <li><a href="Index.html">About Me</a></li>
+      <li><a href="html_web.html">HTML</a></li>
+      <li><a href="hardware.html">Hardware</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="riddles.html">Riddles</a></li>
+      <li><a href="maze.html">Maze</a></li>
+      <li><a href="vindinium.html">Vindinium</a></li>
+    </ul>
+  </div>
+  
+  
+  </head>
+  <style>
+      h1{
+        color:MintCream;
+        text-align:center;
+        font-size:250%;
+      }
+      #menu li{
+	   Display:inline;
+	   text-decoration:none;
+	   color:MintWhite;
+	   padding:20px;
+	   width:550px;
+	   border-style:solid;
+	   background-color:GhostWhite;
+	  }
+	  div{
+	      text-align: center;
+	  }
+	  p{
+	      color:GhostWhite;
+	      font-size:200%;
+	  }
+  </style>
+  <body onload="change_color(true)">
+    <h1>Hey how ya doing</h1>
+    <p>HEYO! My name is Richard and I am a freshman at a highschool in redwoodcity. If you are wondering how I got this webpage. 
+        The answer is actually pretty simple, I created this website using HTML which is not very complicated to use, so I will explain in 
+        the "html" webpage which you can click the "html" button above.</p>
+    <p></p>
